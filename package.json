@@ -9,9 +9,16 @@
     "rimraf": "^6.0.1",
     "vite": "^5.3.5"
   },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "9.x",
+    "globals": "^15.8.0"
+  },
   "scripts": {
-    "build": "yarn clean && vite build",
+    "build": "yarn clean && yarn lint:fix && vite build",
     "serve": "npx http-server dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
