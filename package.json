@@ -1,0 +1,18 @@
+{
+  "name": "local-browser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "rimraf": "^6.0.1",
+    "vite": "^5.3.5"
+  },
+  "scripts": {
+    "build": "yarn clean && vite build",
+    "serve": "npx http-server dist",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
